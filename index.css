@@ -1,0 +1,48 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.card img {
+    height: 200px;
+}
+
+.cards-aside img {
+    height: 150px;
+}
+.accommodations {
+    background-color: grey;
+    border-radius: 25px;
+}
+
+.most-popular {
+    background-color: grey;
+    border-radius: 25px;
+}
+
+.activities {
+    background-color: white;
+}
+
+footer {
+    background-color: grey;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card-aside {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card-activity {
+    background-color: white;
+    border-radius: 15px;
+}
