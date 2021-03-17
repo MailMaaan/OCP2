@@ -1,19 +1,20 @@
-.accommodations-button {
+nav ul {
     float: right;
+    list-style-type: none;
 }
 
-.activities-button {
+nav li {
     float: right;
+    transition: border-top 300ms;
 }
 
-.sign-up {
-    float: right;
+nav li:hover {
+    border-top: 2px solid blue;
 }
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin: 0px;
 }
 
 .filter-title {
@@ -27,6 +28,10 @@ body {
     border-radius: 25px;
     margin-right: 1%;
     margin-left: 1%;
+}
+
+main {
+    margin: 2rem;
 }
 
 .info {
