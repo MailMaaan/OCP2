@@ -1,3 +1,20 @@
+main {
+    margin: 2rem;
+}
+
+nav {
+    margin: 2rem;
+}
+
+header {
+    margin: 2rem;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+}
+
 nav ul {
     float: right;
     list-style-type: none;
@@ -12,9 +29,18 @@ nav li:hover {
     border-top: 2px solid blue;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
-    margin: 0px;
+.sign-up {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.activities-button {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.accommodations-button {
+    margin-right: 20px;
 }
 
 .filter-title {
@@ -30,50 +56,25 @@ body {
     margin-left: 1%;
 }
 
-main {
-    margin: 2rem;
+.fa-cash-bill {
+    float: left;
 }
 
-.info {
-    margin-top: 1%;
-    margin-bottom: 1%;
+.fa-heart {
+    float: left;
 }
 
-.section-title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    padding-left: 3%;
-    padding-top: 3%;
+.fa-child {
+    float: left;
 }
 
-.star-checked {
-    color: blue;
+.fa-dog {
+    float: left;
 }
 
-.star-empty {
-    color: #ececec;
-}
-
-.more {
-    padding-left: 3%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-.card img {
-    height: 200px;
-    width: 100%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    padding-top: 1%;
-}
-
-.card-aside img {
-    width: 30%;
-    height: 100%;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    padding-top: 1%;
+.filter-text {
+    float: right;
+    text-align: left;
 }
 
 .accommodations {
@@ -83,105 +84,6 @@ main {
     margin-right: 5%;
     height: 800px;
     float: left;
-}
-
-.most-popular {
-    background-color: #ececec;
-    border-radius: 25px;
-    width: 30%;
-    margin-left: 5%;
-    float: right;
-}
-
-.cards-activities {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-}
-
-.card-activity-1 {
-    border-radius: 25px;
-    width: 25%;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card-activity-1 img {
-    width: 100%;
-    height: 80%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
-.card-activity-2 {
-    border-radius: 25px;
-    width: 25%;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card-activity-2 img {
-    width: 100%;
-    height: 80%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
-.card-activity-3 {
-    border-radius: 25px;
-    width: 25%;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card-activity-3 img {
-    width: 100%;
-    height: 80%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
-.card-activity-4 {
-    border-radius: 25px;
-    width: 25%;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card-activity-4 img {
-    width: 100%;
-    height: 80%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
-.card-activity-5 {
-    border-radius: 25px;
-    width: 25%;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card-activity-5 img {
-    width: 100%;
-    height: 80%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
-.card-activity-6 {
-    border-radius: 25px;
-    width: 25%;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card-activity-6 img {
-    width: 100%;
-    height: 80%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
-.activities {
-    background-color: white;
-}
-
-footer {
-    background-color: #ececec;
 }
 
 .cards {
@@ -203,8 +105,45 @@ footer {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.card img {
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-top: 1%;
+    object-fit: cover;
+}
+
 .card-accommodations {
     margin-left: 2%;
+    text-align: left;
+}
+
+.rating {
+    height: 25px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px
+}
+
+.most-popular {
+    background-color: #ececec;
+    border-radius: 25px;
+    width: 30%;
+    margin-left: 5%;
+    float: right;
+}
+
+.most-popular i {
+    float: right;
+    font-size: x-large;
+}
+
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-left: 3%;
+    padding-top: 3%;
 }
 
 .cards-aside-section {
@@ -225,11 +164,184 @@ footer {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.card-aside img {
+    width: 30%;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-top: 1%;
+    object-fit: cover;
+}
+
 .cards-aside {
-    float: right;
+    text-align: left;
+}
+
+.star-checked {
+    color: blue;
+}
+
+.star-empty {
+    color: #ececec;
+}
+
+.activities {
+    background-color: white;
+}
+
+.card-activity-1 { grid-area: OldPort; }
+.card-activity-2 { grid-area: PomeguesFort; }
+.card-activity-3 { grid-area: FrioulIsland; }
+.card-activity-4 { grid-area: CalanquesNationalPark; }
+.card-activity-5 { grid-area: NotreDameDeLaGarde; }
+.card-activity-6 { grid-area: LongchampPark; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'OldPort PomeguesFort CalanquesNationalPark NotreDameDeLaGarde'
+    'OldPort FrioulIsland CalanquesNationalPark LongchampPark';
+    grid-template-columns: 1600px;
+    grid-template-rows: 600px;
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+  margin: 0px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 0px;
+  font-size: 10px;
 }
 
 .card-activity {
     background-color: white;
     border-radius: 15px;
+}
+
+.card-activity-1 {
+    border-radius: 25px;
+    width: 25%;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-activity-1 img {
+    width: 100%;
+    height: 90%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+}
+
+.card-activity-2 {
+    border-radius: 25px;
+    width: 25%;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-activity-2 img {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+}
+
+.card-activity-3 {
+    border-radius: 25px;
+    width: 25%;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-activity-3 img {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+}
+
+.card-activity-4 {
+    border-radius: 25px;
+    width: 25%;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-activity-4 img {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+}
+
+.card-activity-5 {
+    border-radius: 25px;
+    width: 25%;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-activity-5 img {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+}
+
+.card-activity-6 {
+    border-radius: 25px;
+    width: 25%;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-activity-6 img {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+}
+
+.cards-aside {
+    float: right;
+}
+
+.info {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.more {
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+footer {
+    background-color: #ececec;
+}
+
+.footer-content-1 { grid-area: About; }
+.footer-content-2 { grid-area: OurAccommodations; }
+.footer-content-3 { grid-area: Assistance; }
+
+.grid-container-2 {
+  display: grid;
+  grid-template-areas:
+    'About OurAccommodations Assistance'
+    'About OurAccommodations Assistance';
+  grid-gap: 10px;
+  background-color: #ececec;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+.grid-container-2 > div {
+  background-color: #ececec;
+  text-align: left;
+  padding: 30px 0;
+  font-size: 18px;
 }
