@@ -15,6 +15,14 @@ nav {
     margin: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+    nav {
+        order: 1;
+        position: relative;
+        height: 120px;
+    }
+}
+
 header {
     margin: 2rem;
 }
@@ -94,6 +102,27 @@ nav li:hover {
     font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+    .accommodations-btn {
+        border-bottom-color: #0065fc;
+        border-bottom-style: solid;
+        border-top-style: none;
+        color: #1e90ff;
+        left: 0px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .accommodations-btn, .activities-btn {
+        width: 50%;
+        margin: 0px;
+        text-align: center;
+        bottom: 0px;
+        position: absolute;
+    }
+}
+
 .filter-title {
     float: left;
 }
@@ -108,43 +137,47 @@ nav li:hover {
     display: inline-block;
     background-color: #deebff;
     color: #0065fc;
-    position: absolute;
-    float: left;
 }
 
 .filter-button {
     background-color: white;
-    outline: #ececec;
+    outline: 2px solid #ececec;
     width: 200px;
     height: 49px;
-    border-radius: 25px;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin: 5px;
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
 }
 
-.filter-button h3 {
-    float: right;
-    padding-left: 30px;
+.filter-button:active {
+    transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+
+.filter-button:hover {
+    transition: all 1s ease;
+    transform: scale(1.25) perspective(1px)
 }
 
 .filter-button i {
-    float: left;
+    
 }
 
 .fa-cash-bill {
-    float: left;
+    
 }
 
 .fa-heart {
-    float: left;
+    
 }
 
 .fa-child {
-    float: left;
+    
 }
 
 .fa-dog {
-    float: left;
+    
 }
 
 .filter-text {
@@ -167,6 +200,13 @@ nav li:hover {
     margin-right: 5%;
     height: 760px;
     float: left;
+}
+@media screen and (max-width: 768px) {
+    .accommodations {
+        height: fit-content;
+        order: 4;
+        width: 100%;
+    }
 }
 
 .cards {
@@ -215,6 +255,16 @@ nav li:hover {
     height: 760px;
     margin-left: 5%;
     float: right;
+}
+
+@media screen and (max-width: 768px) {
+    .most-popular {
+        order: 3;
+        width: 100%;
+        border-radius: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 .most-popular i {
@@ -275,6 +325,14 @@ nav li:hover {
 
 .activities {
     background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .activities {
+        flex-direction: column;
+        margin-top: 40px;
+        order: 5;
+}
 }
 
 .grid-container {
