@@ -15,14 +15,6 @@ nav {
     margin: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-    nav {
-        order: 1;
-        position: relative;
-        height: 120px;
-    }
-}
-
 header {
     margin: 2rem;
 }
@@ -102,24 +94,16 @@ nav li:hover {
     font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
-    .accommodations-btn {
-        border-bottom-color: #0065fc;
-        border-bottom-style: solid;
-        border-top-style: none;
-        color: #1e90ff;
-        left: 0px;
-    }
-}
-
+.sign-up-button {grid-area: item1;}
+.activities-button {grid-area: item2;}
+.accommodations-button {grid-area: item3;}
 
 @media screen and (max-width: 768px) {
-    .accommodations-btn, .activities-btn {
-        width: 50%;
-        margin: 0px;
-        text-align: center;
-        bottom: 0px;
-        position: absolute;
+    .grid-container-nav {
+        display: grid;
+        grid-template-areas: 
+        '. . . item1'
+        'item2 item2 item3 item3';
     }
 }
 
@@ -141,7 +125,8 @@ nav li:hover {
 
 .filter-button {
     background-color: white;
-    outline: 2px solid #ececec;
+    box-shadow: 0 0 3px rgb(141, 139, 139);
+    border-radius: 25px;
     width: 200px;
     height: 49px;
     margin: 5px;
@@ -193,20 +178,17 @@ nav li:hover {
     padding: 5px 10px;
 }
 
+.wrapping {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+
 .accommodations {
     background-color: #ececec;
     border-radius: 25px;
     width: 60%;
-    margin-right: 5%;
     height: 760px;
-    float: left;
-}
-@media screen and (max-width: 768px) {
-    .accommodations {
-        height: fit-content;
-        order: 4;
-        width: 100%;
-    }
 }
 
 .cards {
@@ -217,12 +199,26 @@ nav li:hover {
 
 .card {
     height: 250px;
+    line-height: 5px;
     background-color: white;
     border-radius: 25px;
     padding: 1% 1% 1% 1%;
     margin: 6% 6% 6% 6%;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: box-shadow 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .accommodations {
+        height: fit-content;
+        order: 4;
+        width: 100%;
+    }
+
+    .card {
+        line-height: 10px;
+        font-size: 14px;
+    }
 }
 
 .card:hover {
@@ -253,18 +249,6 @@ nav li:hover {
     border-radius: 25px;
     width: 30%;
     height: 760px;
-    margin-left: 5%;
-    float: right;
-}
-
-@media screen and (max-width: 768px) {
-    .most-popular {
-        order: 3;
-        width: 100%;
-        border-radius: 25px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
 }
 
 .most-popular i {
@@ -286,6 +270,8 @@ nav li:hover {
 
 .card-aside {
     background-color: white;
+    text
+    line-height: 5px;
     border-radius: 25px;
     padding: 1% 1% 1% 1%;
     margin: 4% 4% 4% 11%;
@@ -293,6 +279,21 @@ nav li:hover {
     width: 75%;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: box-shadow 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .most-popular {
+        order: 3;
+        width: 100%;
+        border-radius: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card-aside {
+        line-height: 10px;
+        font-size: 14px;
+    }
 }
 
 .card-aside:hover {
@@ -325,14 +326,6 @@ nav li:hover {
 
 .activities {
     background-color: white;
-}
-
-@media screen and (max-width: 768px) {
-    .activities {
-        flex-direction: column;
-        margin-top: 40px;
-        order: 5;
-}
 }
 
 .grid-container {
@@ -407,6 +400,32 @@ nav li:hover {
     object-fit: cover;
 }
 
+@media screen and (max-width: 768px) {
+    .grid-container {
+        border: 5px dashed red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+        order: 5;
+    }
+
+    .cards-activities {
+        border: 5px dashed blue;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        order: 5;
+    }
+
+    .card-activity{
+        border-radius: 25px;
+        width: 100%;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: box-shadow 0.5s ease-in-out;
+    }
+}
+
 .cards-aside {
     float: right;
 }
@@ -430,7 +449,7 @@ footer {
 .footer-content-2 { grid-area: OurAccommodations; }
 .footer-content-3 { grid-area: Assistance; }
 
-.grid-container-2 {
+.footer-container {
   display: grid;
   grid-template-areas:
     'About OurAccommodations Assistance'
@@ -441,7 +460,7 @@ footer {
   margin-left: 40px;
 }
 
-.grid-container-2 > div {
+.footer-container > div {
   background-color: #ececec;
   text-align: left;
   padding: 30px 0;
