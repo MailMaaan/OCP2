@@ -62,18 +62,10 @@ body {
     margin: 0px;
 }
 
-nav ul {
-    float: right;
-    list-style-type: none;
-}
-
-nav li {
-    float: right;
-    transition: border-top 300ms;
-}
-
-nav li:hover {
-    border-top: 2px solid blue;
+.logo {
+    grid-area: logo;
+    justify-self: start;
+    align-self: start;
 }
 
 .sign-up-button {
@@ -81,29 +73,64 @@ nav li:hover {
     margin-right: 20px;
     color: #1e90ff;
     font-weight: bold;
+    grid-area: item1;
+    justify-self: end;
+}
+
+.sign-up-button:hover {
+    border-top: 1px solid #0065fc;
+    transition: border-top 300ms;
 }
 
 .activities-button {
     margin-left: 20px;
     margin-right: 20px;
+    grid-area: item2;
+    justify-self: center;
+}
+
+.activities-button:hover {
+    border-top: 1px solid #0065fc;
+    transition: border-top 300ms;
 }
 
 .accommodations-button {
     margin-right: 20px;
     color: #1e90ff;
     font-weight: bold;
+    grid-area: item3;
+    justify-self: center;
 }
 
-.sign-up-button {grid-area: item1;}
-.activities-button {grid-area: item2;}
-.accommodations-button {grid-area: item3;}
+.accommodations-button:hover {
+    border-top: 1px solid #0065fc;
+    transition: border-top 300ms;
+}
+
+.grid-container-nav {
+    display: grid;
+    grid-template-areas: 
+    'logo . . . . . . . . . item3 item2 item1';
+}
 
 @media screen and (max-width: 768px) {
     .grid-container-nav {
         display: grid;
         grid-template-areas: 
-        '. . . item1'
-        'item2 item2 item3 item3';
+        'logo item1'
+        'item3 item2';
+        row-gap: 30px;
+    }
+
+    .accommodations-button {
+        border-bottom-color: #0065fc;
+        border-bottom-style: solid;
+        font-weight: bold;
+    }
+
+    .activities-button {
+        border-bottom-color: #ddd;
+        border-bottom-style: solid;
     }
 }
 
@@ -408,6 +435,7 @@ nav li:hover {
         justify-content: space-between;
         margin-top: 40px;
         order: 5;
+        max-height: 100%;
     }
 
     .cards-activities {
@@ -418,8 +446,9 @@ nav li:hover {
         order: 5;
     }
 
-    .card-activity{
+    .card-activity {
         border-radius: 25px;
+        height: 100px;
         width: 100%;
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transition: box-shadow 0.5s ease-in-out;
