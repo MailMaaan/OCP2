@@ -235,6 +235,32 @@ body {
     transition: box-shadow 0.5s ease-in-out;
 }
 
+@media screen and (max-width: 1346px) {
+    .card-accommodations {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1346px) {
+    .card-accommodations {
+        line-height: 15px;
+    }
+}
+
+@media screen and (max-width: 1253px) {
+    .card-accommodations {
+        line-height: 15px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1106px) {
+    .card-accommodations {
+        line-height: 15px;
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .accommodations {
         height: fit-content;
@@ -242,9 +268,15 @@ body {
         width: 100%;
     }
 
-    .card {
-        line-height: 10px;
+    .card-accommodations {
+        line-height: 15px;
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .card-accommodations {
+        font-size: 12px;
     }
 }
 
@@ -308,6 +340,20 @@ body {
     transition: box-shadow 0.5s ease-in-out;
 }
 
+@media screen and (max-width: 1253px) {
+    .card-aside {
+        line-height: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1106px) {
+    .card-aside {
+        line-height: 10px;
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .most-popular {
         order: 3;
@@ -337,6 +383,10 @@ body {
 
 .cards-aside {
     text-align: left;
+}
+
+.cards-aside {
+    line-height: 5px;
 }
 
 .cards-aside i {
@@ -412,6 +462,12 @@ body {
     object-fit: cover;
 }
 
+@media screen and (max-width: 768px) {
+    .card-activity.gi1 img {
+        height: 80%;
+    }
+}
+
 .card-activity.gi2 img {
     width: 100%;
     height: 80%;
@@ -429,7 +485,6 @@ body {
 
 @media screen and (max-width: 768px) {
     .grid-container {
-        border: 5px dashed red;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -439,7 +494,6 @@ body {
     }
 
     .cards-activities {
-        border: 5px dashed blue;
         display: flex;
         flex-direction: column;
         margin-top: 40px;
