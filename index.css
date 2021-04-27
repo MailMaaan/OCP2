@@ -3,10 +3,6 @@ a {
     text-decoration: none;
 }
 
-a i {
-    color: blue;
-}
-
 main {
     margin: 2rem;
 }
@@ -62,10 +58,16 @@ form i:last-child {
     margin: 0px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1211px) {
+@media only screen and (min-width: 768px) and (max-width: 1211px) {
     .main-container {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    main {
+        margin: 0%;
     }
 }
 
@@ -120,7 +122,7 @@ form i:last-child {
     'logo . . . . . . . . . item3 item2 item1';
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .grid-container-nav {
         display: grid;
         grid-template-areas: 
@@ -184,26 +186,6 @@ form i:last-child {
     transform: scale(1.25) perspective(1px)
 }
 
-.filter-button i {
-    
-}
-
-.fa-cash-bill {
-    
-}
-
-.fa-heart {
-    
-}
-
-.fa-child {
-    
-}
-
-.fa-dog {
-    
-}
-
 .filter-text {
     float: right;
     text-align: left;
@@ -228,6 +210,14 @@ form i:last-child {
     border-radius: 25px;
     width: 60%;
     height: 760px;
+}
+
+.active {
+    color: #0065fc;
+}
+
+.empty {
+    color: #DEEBFF;
 }
 
 .cards {
@@ -270,22 +260,28 @@ form i:last-child {
     left: 10px
 }
 
-@media screen and (min-width: 768px) and (max-width: 1211px) {
+@media only screen and (min-width: 768px) and (max-width: 1211px) {
     .accommodations {
         order: 2;
         width: 100%;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .accommodations {
         height: 100%;
         width: 100%;
+        border-radius: 0px;
+        background-color: white;
     }
 
     .card-accommodations {
         line-height: 15px;
         font-size: 15px;
+    }
+
+    .card {
+        margin-bottom: 5px;
     }
 
     .cards {
@@ -309,7 +305,7 @@ form i:last-child {
 
 .most-popular i {
     float: right;
-    font-size: x-large;
+    font-size: large;
 }
 
 .section-title {
@@ -325,6 +321,8 @@ form i:last-child {
 }
 
 .card-aside {
+    display: flex;
+    justify-content: start;
     background-color: white;
     line-height: 5px;
     border-radius: 25px;
@@ -375,6 +373,7 @@ form i:last-child {
         border-radius: 25px;
         margin-top: 20px;
         margin-bottom: 20px;
+        border-radius: 0px;
     }
 
     .card-aside {
@@ -393,14 +392,13 @@ form i:last-child {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     object-fit: cover;
+    display: inline-block;
 }
 
 .cards-aside {
     text-align: left;
-}
-
-.cards-aside {
     line-height: 5px;
+    padding-left: 10px;
 }
 
 .cards-aside i {
@@ -443,7 +441,17 @@ form i:last-child {
   padding: 0px;
   font-size: 10px;
   min-height: 300px;
-  height: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1920px) {
+    .grid-container > div {
+        background-color: white;
+        text-align: center;
+        padding: 0px;
+        font-size: 10px;
+        min-height: 300px;
+        height: 100%;
+      }
 }
 
 .cards-activities {
@@ -502,9 +510,9 @@ form i:last-child {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 40px;
         order: 5;
         max-height: 100%;
+        margin: 0px 20px;
     }
 
     .cards-activities {
@@ -521,10 +529,6 @@ form i:last-child {
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transition: box-shadow 0.5s ease-in-out;
     }
-}
-
-.cards-aside {
-    float: right;
 }
 
 .info {
