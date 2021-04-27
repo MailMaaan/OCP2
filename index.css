@@ -145,9 +145,14 @@ body {
 .filter-bar i {
     padding: 16px;
     border-radius: 50%;
-    display: inline-block;
+    display: inline;
     background-color: #deebff;
     color: #0065fc;
+}
+
+.filter-buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 
 .filter-button {
@@ -261,25 +266,6 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .accommodations {
-        height: fit-content;
-        order: 4;
-        width: 100%;
-    }
-
-    .card-accommodations {
-        line-height: 15px;
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 655px) {
-    .card-accommodations {
-        font-size: 12px;
-    }
-}
-
 .card:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
@@ -301,6 +287,30 @@ body {
     height: 25px;
     bottom: 10px;
     left: 10px
+}
+
+@media screen and (max-width: 768px) {
+    .accommodations {
+        height: 100%;
+        order: 4;
+        width: 100%;
+    }
+
+    .card-accommodations {
+        line-height: 15px;
+        font-size: 15px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0px;
+    }
+
+    .card img {
+        height: 50%;
+    }
 }
 
 .most-popular {
@@ -541,6 +551,13 @@ footer {
   background-color: #ececec;
   padding: 10px;
   margin-left: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .footer-container > div {
