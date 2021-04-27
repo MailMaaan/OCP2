@@ -57,9 +57,16 @@ form i:last-child {
     display: none;
 }
 
-body {
+.main-container {
     font-family: 'Raleway', sans-serif;
     margin: 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1211px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .logo {
@@ -113,7 +120,7 @@ body {
     'logo . . . . . . . . . item3 item2 item1';
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .grid-container-nav {
         display: grid;
         grid-template-areas: 
@@ -240,32 +247,6 @@ body {
     transition: box-shadow 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 1346px) {
-    .card-accommodations {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 1346px) {
-    .card-accommodations {
-        line-height: 15px;
-    }
-}
-
-@media screen and (max-width: 1253px) {
-    .card-accommodations {
-        line-height: 15px;
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 1106px) {
-    .card-accommodations {
-        line-height: 15px;
-        font-size: 12px;
-    }
-}
-
 .card:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
@@ -289,10 +270,16 @@ body {
     left: 10px
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1211px) {
+    .accommodations {
+        order: 2;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
     .accommodations {
         height: 100%;
-        order: 4;
         width: 100%;
     }
 
@@ -349,23 +336,29 @@ body {
     transition: box-shadow 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 1253px) {
-    .card-aside {
-        line-height: 10px;
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 1106px) {
-    .card-aside {
-        line-height: 10px;
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1211px) {
     .most-popular {
         order: 3;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 15px;
+    }
+
+    .cards-aside-section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card-aside {
+        margin: 1% 1% 2% 1%;
+        width: auto;
+        height: auto;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .most-popular {
         width: 100%;
         border-radius: 25px;
         margin-top: 20px;
@@ -471,7 +464,7 @@ body {
     object-fit: cover;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .card-activity.gi1 img {
         height: 80%;
     }
@@ -492,7 +485,7 @@ body {
     object-fit: cover;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .grid-container {
         display: flex;
         flex-direction: column;
@@ -552,7 +545,7 @@ footer {
   margin-left: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .footer-container {
         display: flex;
         flex-direction: column;
