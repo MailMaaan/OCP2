@@ -336,7 +336,7 @@ form i:last-child {
     transition: box-shadow 0.5s ease-in-out;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1211px) {
+@media only screen and (min-width: 768px) and (max-width: 1211px) {
     .most-popular {
         order: 3;
         width: 100%;
@@ -357,7 +357,19 @@ form i:last-child {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 971px) {
+    .card-aside {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 813px) {
+    .card-aside {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
     .most-popular {
         width: 100%;
         border-radius: 25px;
@@ -464,7 +476,7 @@ form i:last-child {
     object-fit: cover;
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .card-activity.gi1 img {
         height: 80%;
     }
@@ -485,7 +497,7 @@ form i:last-child {
     object-fit: cover;
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .grid-container {
         display: flex;
         flex-direction: column;
@@ -545,7 +557,7 @@ footer {
   margin-left: 40px;
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .footer-container {
         display: flex;
         flex-direction: column;
